@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace Formulario;
+namespace INT_P3_2;
 
 public partial class MainWindow : Window
 {

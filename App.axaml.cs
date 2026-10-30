@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 
-namespace Formulario;
+namespace INT_P3_2;
 
 public partial class App : Application
 {

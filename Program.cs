@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace Formulario;
+namespace INT_P3_2;
 
 class Program
 {

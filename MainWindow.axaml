@@ -2,8 +2,36 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="Formulario.MainWindow"
-        Title="Formulario">
-    Welcome to Avalonia!
+        mc:Ignorable="d" d:DesignWidth="380" d:DesignHeight="450"
+        x:Class="INT_P3_2.MainWindow"
+        Title="Inscripción del curso">
+
+    <!--Distribución del Grid Principal: Cabecera - Fila 0 (Auto) + Formulario (Lo que sobre) + Pie(Auto)-->
+    <Grid RowDefinitions="Auto,*,Auto">
+        <!--Cabecera-->
+        <Border Grid.Row="0" Background="#FF0C1E54" Padding="10"><!--Seleccionamos que este borde sera la primera fila(0)-->
+            <StackPanel Spacing="4" >
+                <TextBlock Text="Inscripción del curso" FontSize="14" FontWeight="Bold" Foreground="White" />
+                <TextBlock Text="IES El Majuelo - Formación complementaria" FontSize="10" Foreground="White"/>                
+            </StackPanel>
+        </Border>
+        <!--Formulario-->
+        <!--Grid.Row en la fila 1 para estirarse al ancho disponible en esa fila (*)-->
+        <!--Será ScrollViewer por si el contenido excete el espacio disponible -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Background="LightGray">
+            <StackPanel Spacing="10">
+                <!--Datos personales-->
+                <Border Margin="10" Padding="10" BorderThickness="1"  VerticalAlignment="Top" Background="White">
+                    <StackPanel>
+                        <TextBlock Text="Datos personales" FontSize="10"  FontWeight="Bold" Foreground="#FF0C1E54"/>
+                        <!--Campos de entrada-->
+                        <Grid>
+
+                        </Grid>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>    
 </Window>
